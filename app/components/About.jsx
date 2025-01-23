@@ -5,12 +5,12 @@ const About = () => {
     <div id="about" className="w-full px-[12%] py-10 scroll-mt-20">
         <h4 className="text-center mb-2 text-lg font-Ovo">Introduction</h4>
         <h2 className="text-center text-5xl font-Ovo">About me</h2>
-        <div className="flex w-full flex-col lg:flex-row items-center gap-20 my-20">
-            <div className="w-64 sm:w-80 rounded-3xl max-w-none">
+        <div className="flex w-full flex-col items-center gap-20 my-20">
+{/*             <div className="w-64 sm:w-80 rounded-3xl max-w-none">
                 <Image src={assets.user_image} alt="yousef" className="w-full rounded-3xl"/>
-            </div>
+            </div> */}
             <div className="flex-1">
-                <p className="mb-10 max-w-2xl font-Ovo">I specialize in building responsive, user-centric web applications. With strong expertise 
+                <p className="mb-10 max-w-2xl font-Ovo text-center">I specialize in building responsive, user-centric web applications. With strong expertise 
                     in React.js, Next.js, and modern UI frameworks like Tailwind CSS, I thrive on creating 
                     intuitive and visually appealing interfaces. My objective is to get an internship or a full 
                     time job working as frontend developer.
@@ -26,7 +26,7 @@ const About = () => {
                 </ul>
 
                 <h4 className="my-6 text-gray-700 font-Ovo">Tools I Use</h4>
-                <ul className="flex items-center gap-3 sm:gap-5">
+                <ul className="flex justify-center items-center gap-3 sm:gap-5">
                     {toolsData.map((tool, index)=>(
                         <li className="flex items-center justify-center w-12 sm:w-14 aspect-square border border-gray-400 rounded-lg cursor-pointer hover:-translate-y-1 duration-500 " key={index}>
                             <Image src={tool} alt="tool" className="w-5 sm:w-7"/>
